@@ -5,11 +5,13 @@
     font-family: "Poppins", sans-serif;
   }
   body {
+    width: 100vw;
     background-color: #fdbf00;
+    align-items: center;
   }
   .card {
-    width: 1024px;
-    height: 640px;
+    max-width: 819.2px;
+    max-height: 512px;
     position: absolute;
     margin: auto;
     left: 0;
@@ -23,7 +25,7 @@
   .card:hover {
     transform: rotate(-4deg);
   }
-  .card .outside:hover {
+  .card:hover .outside {
     transform: rotateY(-130deg);
   }
   
@@ -32,7 +34,7 @@
     height: 100%;
     width: 50%;
     position: absolute;
-    left: 50.1%;
+    left: 35.1%;
   }
   .inside {
     background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
@@ -43,7 +45,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    left: 50%;
+    left: 35%;
   }
   .outside {
     -webkit-transform-style: preserve-3d;
@@ -106,10 +108,10 @@
     width: 15px;
     background: repeating-linear-gradient(
       45deg,
-      #fd3018 0,
-      #fd3018 5px,
-      #ffa89e 5px,
-      #ffa89e 10px
+      #ff1900 0,
+      #ff1900 5px,
+      #ffffff 5px,
+      #ffffff 10px
     );
     position: absolute;
     margin: auto;
@@ -124,7 +126,7 @@
     width: 16px;
     background-color: #ffa500;
     border-radius: 0 50% 50% 50%;
-    bottom: 48px;
+    bottom: 45px;
     transform: rotate(45deg);
     left: -1px;
   }
